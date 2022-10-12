@@ -1,4 +1,5 @@
 import '../src/index.css'
+import 'rsuite/dist/rsuite.min.css';
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
