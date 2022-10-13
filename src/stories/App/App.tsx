@@ -1,8 +1,9 @@
-import { useState } from 'react'
-import './App.css'
+import './App.css';
+
+import { useState } from 'react';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
     <div className="App">
@@ -10,8 +11,7 @@ function App() {
         <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
           <img src="/vite.svg" className="logo" alt="Vite logo" />
         </a>
-        <a href="https://reactjs.org" target="_blank" rel="noreferrer">
-        </a>
+        <a href="https://reactjs.org" target="_blank" rel="noreferrer"></a>
       </div>
       <h1>Vite + React</h1>
       <div className="card">
@@ -26,7 +26,7 @@ function App() {
         Click on the Vite and React logos to learn more
       </p>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
