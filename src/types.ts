@@ -1,16 +1,16 @@
-export type KIND_TYPE = 'info' | 'success' | 'warning' | 'error'
+export type APPEARENCE = 'default' | 'primary' | 'link' | 'subtle' | 'ghost';
 
-export type PLACEMENT_TYPE =
-  | 'topCenter'
-  | 'bottomCenter'
-  | 'topStart'
-  | 'topEnd'
-  | 'bottomStart'
-  | 'bottomEnd'
+export type SIZE = 'lg' | 'md' | 'xs';
 
-export type APPEARENCE_TYPE =
-  | 'default'
-  | 'primary'
-  | 'link'
-  | 'subtle'
-  | 'ghost'
+export type PLACEMENT = 'right' | 'left';
+
+export type TYPE = 'info' | 'success' | 'warning' | 'error';
+
+export type COLOR =
+  | 'red'
+  | 'orange'
+  | 'yellow'
+  | 'green'
+  | 'cyan'
+  | 'blue'
+  | 'violet';
