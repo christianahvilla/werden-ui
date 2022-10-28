@@ -1,6 +1,6 @@
 export type APPEARENCE = 'default' | 'primary' | 'link' | 'subtle' | 'ghost';
 
-export type SIZE = 'lg' | 'md' | 'xs';
+export type SIZE = 'lg' | 'md' | 'sm';
 
 export type PLACEMENT = 'right' | 'left';
 
