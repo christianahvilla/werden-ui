@@ -14,3 +14,7 @@ export type COLOR =
   | 'cyan'
   | 'blue'
   | 'violet';
+
+export type SORT_TYPE = 'desc' | 'asc';
+
+export type WORD_WRAP = boolean | 'break-all' | 'break-word' | 'keep-all';
