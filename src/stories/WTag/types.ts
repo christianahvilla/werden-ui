@@ -7,7 +7,6 @@ export type TagType = {
   color: COLOR;
   content: string | ReactNode;
   id: string | number;
-  // eslint-disable-next-line no-unused-vars
   onClose: (event: MouseEvent) => void;
   size: SIZE;
 };

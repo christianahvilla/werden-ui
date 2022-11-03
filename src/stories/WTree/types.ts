@@ -2,7 +2,7 @@ import { SyntheticEvent } from 'react';
 import type { ListProps } from 'rsuite';
 import type { ItemDataType } from 'rsuite/esm/@types/common';
 
-type VoidFunction = (_item: ItemDataType<string | number>) => void;
+type VoidFunction = (item: ItemDataType<string | number>) => void;
 
 export interface IWTree {
   data: Array<ItemDataType>;
@@ -23,9 +23,9 @@ export interface IWTree {
   onDragStart?: VoidFunction;
   onDrop?: VoidFunction;
   onSelect?: (
-    _activeNode: ItemDataType<string | number>,
-    _value: string | number,
-    _event: SyntheticEvent<Element, Event>
+    activeNode: ItemDataType<string | number>,
+    value: string | number,
+    event: SyntheticEvent<Element, Event>
   ) => void;
   virtualized?: boolean;
 }
