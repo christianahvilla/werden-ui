@@ -1,5 +1,6 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 
+import { SORT_TYPE } from '../../types';
 import { mockHeader, mockTable } from './__mocks__/mock';
 import WTable from './WTable';
 
@@ -21,7 +22,7 @@ Default.args = {
   columns: mockHeader,
   data: mockTable['results'],
   defaultExpandAllRows: false,
-  defaultSortType: 'desc',
+  defaultSortType: SORT_TYPE['ASC'],
   fillHeight: false,
   headerHeight: 50,
   height: 400,
@@ -30,8 +31,8 @@ Default.args = {
   loading: false,
   minHeight: 400,
   showHeader: true,
-  sortCoulmn: 'desc',
-  sortType: 'desc',
+  sortCoulmn: SORT_TYPE['ASC'],
+  sortType: SORT_TYPE['ASC'],
   virtualized: false,
   wordWrap: false,
 };

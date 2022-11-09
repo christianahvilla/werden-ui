@@ -1,5 +1,6 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 
+import { TYPE } from '../../types';
 import WMessage from './WMessage';
 
 export default {
@@ -14,7 +15,7 @@ const Template: ComponentStory<typeof WMessage> = (args) => (
 export const Default = Template.bind({});
 
 Default.args = {
-  type: 'error',
+  type: TYPE['ERROR'],
   showIcon: true,
   header: 'Success',
   text: 'This is an success message about copywriting.',

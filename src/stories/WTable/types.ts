@@ -1,6 +1,6 @@
 import { ReactNode } from 'react';
 
-import { SORT_TYPE, WORD_WRAP } from './../../types';
+import { SORT_TYPE, WORD_WRAP } from '../../types';
 
 type TableLocaleType = {
   emptyMessage?: string;
@@ -36,26 +36,26 @@ export interface IWTable {
   locale?: TableLocaleType;
   minHeight?: number;
   onDataUpdate?: (
-    _nextData: object[],
-    _scrollTo: (_coord: { x: number; y: number }) => void
+    nextData: object[],
+    scrollTo: (coord: { x: number; y: number }) => void
   ) => void;
-  onExpandChange?: (_expanded: boolean, _rowData: object) => void;
-  onRowClick?: (_rowData: object) => void;
-  onSortColumn?: (_dataKey: string, _sortType?: string) => void;
-  renderEmpty?: (_info: ReactNode) => ReactNode;
-  renderLoading: (_loading: ReactNode) => ReactNode;
-  renderRow: (_children?: ReactNode, _rowData?: object) => ReactNode;
-  renderRowExpanded?: (_rowDate?: object) => ReactNode;
+  onExpandChange?: (expanded: boolean, rowData: object) => void;
+  onRowClick?: (rowData: object) => void;
+  onSortColumn?: (dataKey: string, sortType?: string) => void;
+  renderEmpty?: (info: ReactNode) => ReactNode;
+  renderLoading: (loading: ReactNode) => ReactNode;
+  renderRow: (children?: ReactNode, rowData?: object) => ReactNode;
+  renderRowExpanded?: (rowDate?: object) => ReactNode;
   renderTreeToggle?: (
-    _expandButton: ReactNode,
-    _rowData?: Record<string, unknown>,
-    _expanded?: boolean
+    expandButton: ReactNode,
+    rowData?: Record<string, unknown>,
+    expanded?: boolean
   ) => ReactNode;
-  rowHeight: (_rowData?: object) => number;
+  rowHeight: (rowData?: object) => number;
   showHeader?: boolean;
   sortCoulmn?: string;
   sortType?: SORT_TYPE;
   virtualized?: boolean;
   width?: number;
-  wordWrap?: WORD_WRAP;
+  wordWrap?: WORD_WRAP | boolean;
 }

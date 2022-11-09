@@ -1,20 +1,58 @@
-export type APPEARENCE = 'default' | 'primary' | 'link' | 'subtle' | 'ghost';
+export const enum APPEARENCE {
+  DEFAULT = 'default',
+  GHOST = 'ghost',
+  LINK = 'link',
+  PRIMARY = 'primary',
+  SUBTLE = 'subtle',
+}
 
-export type SIZE = 'lg' | 'md' | 'sm';
+export const enum SIZE {
+  LG = 'lg',
+  MD = 'md',
+  SM = 'sm',
+}
 
-export type PLACEMENT = 'right' | 'left';
+export const enum PLACEMENT {
+  LEFT = 'left',
+  RIGHT = 'right',
+}
 
-export type TYPE = 'info' | 'success' | 'warning' | 'error';
+export const enum TYPE {
+  ERROR = 'error',
+  INFO = 'info',
+  SUCCESS = 'success',
+  WARNING = 'warning',
+}
 
-export type COLOR =
-  | 'red'
-  | 'orange'
-  | 'yellow'
-  | 'green'
-  | 'cyan'
-  | 'blue'
-  | 'violet';
+export const enum COLOR {
+  BLUE = 'blue',
+  CYAN = 'cyan',
+  GREEN = 'green',
+  ORANGE = 'orange',
+  RED = 'red',
+  VIOLET = 'violet',
+  YELLOW = 'yellow',
+}
 
-export type SORT_TYPE = 'desc' | 'asc';
+export const enum SORT_TYPE {
+  ASC = 'asc',
+  DESC = 'desc',
+}
 
-export type WORD_WRAP = boolean | 'break-all' | 'break-word' | 'keep-all';
+export const enum WORD_WRAP {
+  BREAK_ALL = 'break-all',
+  BREAK_WORD = 'break-word',
+  KEEP_ALL = 'keep-all',
+}
+
+export const enum COMPLETED_PLACEMENT {
+  BOTTOM = 'bottom',
+  LEFT = 'left',
+  RIGHT = 'right',
+  TOP = 'top',
+}
+
+export const enum SHAPE {
+  BAR = 'bar',
+  DOT = 'dot',
+}
