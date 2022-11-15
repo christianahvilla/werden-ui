@@ -17,6 +17,26 @@ export const enum PLACEMENT {
   RIGHT = 'right',
 }
 
+export enum ALL_PLACEMENT {
+  AUTO = 'auto',
+  AUTO_HORIZONTAL_END = 'autoHorizontalEnd',
+  AUTO_HORIZONTAL_START = 'autoHorizontalStart',
+  AUTO_VERTICAL_END = 'autoVerticalEnd',
+  AUTO_VERTICAL_START = 'autoVerticalStart',
+  BOTTOM = 'bottom',
+  BOTTOM_END = 'bottomEnd',
+  BOTTOM_START = 'bottomStart',
+  LEFT = 'left',
+  LEFT_END = 'leftEnd',
+  LEFT_START = 'leftStart',
+  RIGHT = 'right',
+  RIGHT_END = 'rightEnd',
+  RIGHT_START = 'rightStart',
+  TOP = 'top',
+  TOP_END = 'topEnd',
+  TOP_START = 'topStart',
+}
+
 export const enum TYPE {
   ERROR = 'error',
   INFO = 'info',
@@ -55,4 +75,13 @@ export const enum COMPLETED_PLACEMENT {
 export const enum SHAPE {
   BAR = 'bar',
   DOT = 'dot',
+}
+
+export enum TRIGGER {
+  ACTIVE = 'active',
+  CLICK = 'click',
+  CONTEXT_MENU = 'contextMenu',
+  FOCUS = 'focus',
+  HOVER = 'hover',
+  NONE = 'none',
 }
